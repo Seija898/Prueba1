@@ -3,11 +3,37 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
   <link href="./output.css" rel="stylesheet">
+  <link rel="stylesheet" href="style/app.css">
+
+
 </head>
+   <title>Spagna - Restaurant </title>
 <body>
-  <h1 class="text-3xl font-bold underline text-center text-lime-500 mx-auto">
-    Hello world!
-  </h1>
+     
+     <nav>
+
+        <ul class="sidebar">
+            <li class="buttonMenu-close" onclick="hidesidebar()"><button><svg xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960" width="30px" fill="#000000"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></li>
+            <li><a href="#" class="text-lg">Menu</a></li>
+            <li><a href="#" class="text-lg">Nuestra Historia</a></li>
+            
+        </ul>
+
+         <div class="nav-menu">
+            <h2><a href="index.html" class="text-2xl font-semibold"> Spagna</a></h2>
+            <ul>
+                <li><a href="#" class="text-lg hiddenmobile">Menu</a></li>
+                <li><a href="#" class="text-lg hiddenmobile">Nuestra Historia</a></li>
+                <li class="buttonMenu-open" onclick="showsidebar()"><button><svg xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960" width="30px" fill="#000000"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></li>
+            </ul>
+         </div>
+     </nav>
+   
+
+     <script src="JS/appjs.js"></script>
 </body>
 </html>
